@@ -31,7 +31,7 @@
     },
     "nsis": {
       "deleteAppDataOnUninstall": true,
-      "shortcutName": "Electron Sample"
+      "executableName": "Electron Sample"
     },
     "publish": [
       {
