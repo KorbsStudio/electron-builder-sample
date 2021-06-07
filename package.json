@@ -46,7 +46,8 @@
       {
         "provider": "github",
         "owner": "KorbsStudio",
-        "repo": "electron-builder-sample"
+        "repo": "electron-builder-sample",
+        "releaseType": "draft"
       }
     ]
   }
