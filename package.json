@@ -29,10 +29,6 @@
       "synopsis": "A very short description, like a slogan",
       "description": "A description of the application, what it does, and how it works."
     },
-    "nsis": {
-      "deleteAppDataOnUninstall": true,
-      "executableName": "Electron Sample"
-    },
     "publish": [
       {
         "provider": "github",
