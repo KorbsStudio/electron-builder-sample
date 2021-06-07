@@ -3,11 +3,16 @@
 
 name: Node.js CI
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+    
+
 
 jobs:
   build:
@@ -22,7 +27,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
+    
