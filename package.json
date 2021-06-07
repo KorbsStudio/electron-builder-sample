@@ -1,0 +1,13 @@
+{
+  "name": "electron-samplw",
+  "version": "1.0.0",
+  "description": "Basic structure for your first Electron application.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "KorbsStudio",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  }
+}
