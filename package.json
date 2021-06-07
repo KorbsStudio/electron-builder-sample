@@ -9,15 +9,13 @@
   },
   "author": "KorbsStudio",
   "devDependencies": {
-    "electron": "^13.1.1"
+    "electron": "^13.1.1",
+    "electron-builder": "^22.10.5"
   },
   "build": {
     "appId": "com.example.app",
     "mac": {
       "target": "dmg"
     }
-  },
-  "dependencies": {
-    "electron-builder": "^22.10.5"
   }
 }
