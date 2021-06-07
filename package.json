@@ -1,5 +1,5 @@
 {
-  "name": "electron-samplw",
+  "name": "electron-builder-sample",
   "version": "1.0.0",
   "description": "Basic structure for your first Electron application.",
   "main": "main.js",
@@ -8,6 +8,15 @@
   },
   "author": "KorbsStudio",
   "devDependencies": {
-    "electron": "^13.0.1"
+    "electron": "^13.1.1"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "dependencies": {
+    "electron-builder": "^22.10.5"
   }
 }
