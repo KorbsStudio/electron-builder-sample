@@ -20,10 +20,7 @@
     },
     "mac": {
       "target": "dmg",
-      "icon": "build/icons/icon.icns",
-      "background": "build/background.png",
-      "iconSize": "80",
-      "iconTextSize": "12"
+      "icon": "build/icons/icon.icns"
     },
     "linux": {
       "target": "AppImage",
