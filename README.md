@@ -59,3 +59,5 @@ npm run publish
 ```
 
 Make sure the URL contains the __latest-OS.yml__ file, if you're including auto-updates with the application.
+
+NOTE: Don't use Node 16.x with Electron Builder, there seems to be an error with macOS. 
