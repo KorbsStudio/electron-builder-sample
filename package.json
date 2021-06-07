@@ -15,13 +15,21 @@
   "build": {
     "appId": "com.example.app",
     "win": {
-      "target": "exe"
+      "target": "nsis"
     },
     "mac": {
       "target": "dmg"
     },
     "linux": {
       "target": "AppImage"
+    },
+    "nsis": {
+      "deleteAppDataOnUninstall": true,
+      "shortcutName": "Electron Sample",
+      "oneClick": true,
+      "runAfterFinish": true,
+      "createStartMenuShortcut": true,
+      "createDesktopShortcut": false
     },
     "publish": [
       {
