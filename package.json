@@ -14,15 +14,21 @@
   },
   "build": {
     "appId": "com.example.app",
+    "win": {
+      "target": "exe"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
     "publish": [
       {
         "provider": "github",
         "owner": "KorbsStudio",
         "repo": "electron-builder-sample"
       }
-    ],
-    "mac": {
-      "target": "dmg"
-    }
+    ]
   }
 }
