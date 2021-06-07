@@ -4,7 +4,8 @@
   "description": "Basic structure for your first Electron application.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build"
   },
   "author": "KorbsStudio",
   "devDependencies": {
