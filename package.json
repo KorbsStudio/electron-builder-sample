@@ -21,7 +21,6 @@
     "mac": {
       "target": "dmg",
       "icon": "build/icons/icon.icns",
-      "title": "Electron Sample",
       "background": "build/background.png",
       "iconSize": "80",
       "iconTextSize": "12"
