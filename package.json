@@ -31,11 +31,7 @@
     },
     "nsis": {
       "deleteAppDataOnUninstall": true,
-      "shortcutName": "Electron Sample",
-      "oneClick": true,
-      "runAfterFinish": true,
-      "createStartMenuShortcut": true,
-      "createDesktopShortcut": false
+      "shortcutName": "Electron Sample"
     },
     "publish": [
       {
