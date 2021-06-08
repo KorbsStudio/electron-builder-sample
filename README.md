@@ -2,6 +2,7 @@
 In progress
 
 ## Do To List
+ - For auto updating to work on macOS (DMG), I need to add code signing for GitHub Actions? No?
  - Learn how to make GitHub Actions build a `.appx` file using [`electron-windows-store`](https://github.com/felixrieseberg/electron-windows-store)
    - Learn to add Windows SDK (Required)
    - Find out paths (Assuming GitHub uses "C:\a\repo_name\" so far)
