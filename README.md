@@ -15,7 +15,7 @@ In progress
 ![image](https://i.imgur.com/qYUhs04.png)
 
 ### Installer - macOS (DMG)
-No preview available as of now
+![image](https://cdn.discordapp.com/attachments/829662493533667339/851350613748219904/unknown.png)
 
 ## Documentation
 It's probably best that you read documentation from the official website at [electron.build](https://www.electron.build/).
