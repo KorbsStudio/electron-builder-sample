@@ -1,6 +1,15 @@
 # Electron Builder Sample
 In progress
 
+## Do To List
+ - Learn how to make GitHub Actions build a `.appx` file using [`electron-windows-store`](https://github.com/felixrieseberg/electron-windows-store)
+   - Learn to add Windows SDK (Required)
+   - Find out paths (Assuming GitHub uses "C:\a\repo_name\" so far)
+   - Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)
+ - Create template images for installers
+   - Background for DMG (macOS)
+   - Sidebar background for NSIS (Windows, if not using silent install option)
+
 ## Previews
 ### Application
 ![image](https://i.imgur.com/qYUhs04.png)
@@ -15,6 +24,8 @@ It's probably best that you read documentation from the official website at [ele
 I'm only aware with how GitHub and self-hosting works, when it comes to including auto-updates.
 
 For other options like S3 or Amazon, go to the offiical website at [electron.build](https://www.electron.build/).
+
+I'm currently learning to how to deal with Snap, a template for it will be looked into.
 
 #### GitHub
 ```
