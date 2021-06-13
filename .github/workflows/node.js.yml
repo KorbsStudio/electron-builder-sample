@@ -5,8 +5,6 @@ env:
 
 on:
   workflow_dispatch:
-    
-
 
 jobs:
   build-mac:
