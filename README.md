@@ -21,9 +21,6 @@ In progress
 ## Documentation
 It's probably best that you read documentation from the official website at [electron.build](https://www.electron.build/).
 
-### Managing Auto Updates
-WIP
-
 ### Publish
 I'm only aware with how GitHub and self-hosting works, when it comes to including auto-updates.
 
