@@ -21,4 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: ls C:\Users\
+    - run: ls C:\Users\installer
+    - run: ls C:\Users\RMAGEN~1
+    - run: ls C:\Users\runneradmin
     
