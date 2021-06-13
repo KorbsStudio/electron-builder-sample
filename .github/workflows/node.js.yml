@@ -41,7 +41,7 @@ jobs:
     
   build-win:
 
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     strategy:
       matrix:
