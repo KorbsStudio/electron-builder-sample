@@ -26,8 +26,6 @@ I'm only aware with how GitHub and self-hosting works, when it comes to includin
 
 For other options like S3 or Amazon, go to the offiical website at [electron.build](https://www.electron.build/).
 
-I'm currently learning to how to deal with Snap, a template for it will be looked into.
-
 #### GitHub
 ```
 "publish": [
