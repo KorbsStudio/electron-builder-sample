@@ -6,13 +6,16 @@ In progress
  - ~~Learn how to make GitHub Actions build a `.appx` file using [`electron-windows-store`](https://github.com/felixrieseberg/electron-windows-store)~~
    - ~~Learn to add Windows SDK (Required)~~
    - ~~Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)~~
- - Create template images for installers
+ - ~~Create template images for installers~~
    - ~~Background for DMG (macOS)~~
    - ~~Sidebar background for NSIS (Windows, if not using oneClick set to true)~~
 
 ## Previews
 ### Application
 ![image](https://i.imgur.com/qYUhs04.png)
+
+### Installer - Windows (NSIS using assisted installer)
+![image](https://i.imgur.com/ftiXdoR.png)
 
 ### Installer - macOS (DMG)
 ![image](https://i.imgur.com/t1oQFgd.png)
