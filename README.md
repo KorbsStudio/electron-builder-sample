@@ -10,7 +10,7 @@ In progress
      - Must be [this](https://pastebin.com/raw/PAz3KzLW) file named as __.electron-windows-store__
    - Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)
  - Create template images for installers
-   - Background for DMG (macOS)
+   - ~~Background for DMG (macOS)
    - Sidebar background for NSIS (Windows, if not using silent install option)
 
 ## Previews
