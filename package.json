@@ -15,8 +15,7 @@
   "build": {
     "appId": "com.korbsstudio.electron-sample",
     "win": {
-      "target": "nsis",
-      "icon": "build/icons/icon.ico"
+      "target": "nsis"
     },
     "mac": {
       "target": "dmg",
