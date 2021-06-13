@@ -4,8 +4,10 @@ In progress
 ## Do To List
  - For auto updating to work on macOS (DMG), I need to add code signing for GitHub Actions [Possible](https://localazy.com/blog/how-to-automatically-sign-macos-apps-using-github-actions)
  - Learn how to make GitHub Actions build a `.appx` file using [`electron-windows-store`](https://github.com/felixrieseberg/electron-windows-store)
-   - Learn to add Windows SDK (Required)
+   - ~~Learn to add Windows SDK (Required)~~
    - ~~Find out paths~~ [Found](https://i.imgur.com/Yy9UMqD.png) `D:\a\electron-builder-sample\electron-builder-sample\dist\win-unpacked`
+   - Learn how to add a file to profile folder via GitHub Actions, I think in `C:\Users\runneradmin\`
+     - Must be [this](https://pastebin.com/raw/PAz3KzLW) file named as __.electron-windows-store__
    - Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)
  - Create template images for installers
    - Background for DMG (macOS)
