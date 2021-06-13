@@ -8,6 +8,7 @@ In progress
    - ~~Find out paths~~ [Found](https://i.imgur.com/Yy9UMqD.png) `D:\a\electron-builder-sample\electron-builder-sample\dist\win-unpacked`
    - Learn how to add a file to profile folder via GitHub Actions, I think in `C:\Users\runneradmin\`
      - Must be [this](https://pastebin.com/raw/PAz3KzLW) file named as __.electron-windows-store__
+     - **MAY REVERT TO USING SELF-HOSTED RUNNER** ;-;
    - Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)
  - Create template images for installers
    - ~~Background for DMG (macOS)~~
