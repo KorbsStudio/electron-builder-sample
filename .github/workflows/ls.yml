@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Check System Files List
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
