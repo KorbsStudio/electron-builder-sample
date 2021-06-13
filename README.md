@@ -8,7 +8,7 @@ In progress
    - ~~Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)~~
  - Create template images for installers
    - ~~Background for DMG (macOS)~~
-   - Sidebar background for NSIS (Windows, if not using silent install option)
+   - ~~Sidebar background for NSIS (Windows, if not using oneClick set to true)~~
 
 ## Previews
 ### Application
