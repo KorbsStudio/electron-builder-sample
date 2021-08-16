@@ -1,24 +1,9 @@
 # Electron Builder Sample
-In progress
-
-## Do To List
- - For auto updating to work on macOS (DMG), I need to add code signing for GitHub Actions [Possible](https://localazy.com/blog/how-to-automatically-sign-macos-apps-using-github-actions)
- - ~~Learn how to make GitHub Actions build a `.appx` file using [`electron-windows-store`](https://github.com/felixrieseberg/electron-windows-store)~~
-   - ~~Learn to add Windows SDK (Required)~~
-   - ~~Make sure Microsoft Store can accept the file (I own a Developer account, so I can make sure)~~
- - ~~Create template images for installers~~
-   - ~~Background for DMG (macOS)~~
-   - ~~Sidebar background for NSIS (Windows, if not using oneClick set to true)~~
-
 ## Previews
 ### Application
-![image](https://i.imgur.com/qYUhs04.png)
-
-### Installer - Windows (NSIS using assisted installer)
-![image](https://i.imgur.com/ftiXdoR.png)
-
-### Installer - macOS (DMG)
-![image](https://i.imgur.com/t1oQFgd.png)
+Application Preview            |  Windows Installer    | macOS Installer         
+:-------------------------:|:-------------------------:|:-------------------------:
+<img width="350" src="https://i.imgur.com/qYUhs04.png">   |  <img width="350" src="https://i.imgur.com/ftiXdoR.png">|  <img width="350" src="https://i.imgur.com/t1oQFgd.png">
 
 ## Documentation
 It's probably best that you read documentation from the official website at [electron.build](https://www.electron.build/).
