@@ -1,11 +1,12 @@
 {
   "name": "electron-builder-sample",
   "version": "1.0.0",
-  "description": "Basic structure for your first Electron application.",
+  "description": "A description of the application on what it does.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build -p always"
+    "build": "electron-builder build",
+    "publish": "electron-builder build -p always"
   },
   "author": "KorbsStudio",
   "devDependencies": {
@@ -14,6 +15,7 @@
   },
   "build": {
     "appId": "com.korbsstudio.electron-sample",
+    "extraResources": "./extra",
     "win": {
       "target": "nsis",
       "icon": "build/icons/icon.ico"
@@ -27,7 +29,7 @@
       "icon": "build/icons/icon.png",
       "category": "Network",
       "synopsis": "A very short description, like a slogan",
-      "description": "A description of the application, what it does, and how it works."
+      "description": "A description of the application on what it does."
     },
     "publish": [
       {
@@ -37,5 +39,8 @@
         "releaseType": "draft"
       }
     ]
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9"
   }
 }
