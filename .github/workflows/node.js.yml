@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build Executable Files
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -9,11 +9,11 @@ on:
 jobs:
   build-mac:
 
-    runs-on: macOS-10.15
+    runs-on: macOS-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [14.x] # Don't use v16, last time I checked there were a few issues with it
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -25,7 +25,7 @@ jobs:
     
   build-lnx:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # If you're interested in building RPM or Pacman files, GitHub only has Ubuntu as a distro option. You'll need to run a self-hosted runner: https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners
 
     strategy:
       matrix:
@@ -52,7 +52,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install electron-builder@22.10.5
     - run: npm install
     - run: npm run build
     
