@@ -5,6 +5,11 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <div id="messages"></div>
+  <script>
+    const {ipcRenderer} = require('electron');
+    ipcRenderer.on('message', function(event, text) {var container = document.getElementById('messages').style.display = 'inherit';var container = document.getElementById('messages');var message = document.createElement('div');message.innerHTML = text;container.appendChild(message);})
+  </script>
   </body>
 </html>
 <style>
@@ -21,5 +26,15 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0px;
+}
+div#messages {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 20px;
+  background: rgb(133 99 216);
+  padding: 7px 15px;
+  border-radius: 4px;
+  display: none;
 }
 </style>

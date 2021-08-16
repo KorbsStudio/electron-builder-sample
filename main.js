@@ -1,5 +1,7 @@
 const {app, dialog, BrowserWindow} = require('electron');
 const {autoUpdater} = require("electron-updater");
+const log = require('electron-log');
+autoUpdater.logger = log;
 
 autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
   const dialogOpts = {
@@ -7,28 +9,24 @@ autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
     buttons: ['Restart', 'Later'],
     title: 'Update Ready',
     message: process.platform === 'win32' ? releaseNotes : releaseName,
-    detail: 'New update has been downloaded, to apply the new update please restart the application.'
+    detail: 'A new update is ready!'
   }
-
-  dialog.showMessageBox(dialogOpts).then((returnValue) => {
-    if (returnValue.response === 0) autoUpdater.quitAndInstall()
-  })
-})
-
-autoUpdater.on('error', message => {
-  console.error('An error occured when updating the application.')
-  console.error(message)
+  dialog.showMessageBox(dialogOpts).then((returnValue) => {if (returnValue.response === 0) autoUpdater.quitAndInstall()})
 })
 
 function createWindow () {
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 600,
     height: 400,
-    autoHideMenuBar: true
+    autoHideMenuBar: true,
+    webPreferences: {
+      enableRemoteModule: true,
+      contextIsolation: false,
+      nodeIntegration: true
+    }
   })
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL(`file://${__dirname}/index.html#v${app.getVersion()}`);
 }
-app.whenReady().then(() => {
-  createWindow();
-  autoUpdater.checkForUpdatesAndNotify();
-})
+autoUpdater.on('update-available', (info) => {sendStatusToWindow('New update downloading...')})
+function sendStatusToWindow(text) {log.info(text);mainWindow.webContents.send('message', text);}
+app.whenReady().then(() => {createWindow();autoUpdater.checkForUpdatesAndNotify();})
