@@ -8,6 +8,18 @@ Application Preview            |  Windows Installer    | macOS Installer
 ## Documentation
 It's probably best that you read documentation from the official website at [electron.build](https://www.electron.build/).
 
+### Building Flatpak for Linux
+This is not in Electron Builder's documentations for some reason, but if you're wanting to build a `.flatpak` file, it's possible with Electron Builder.
+
+First, you'll need to install Flatpak Builder:
+```
+sudo dnf install flatpak-builder #or use "apt" if you're using debian/ubuntu
+flatpak --user remote-add --from flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak --user install flathub org.gnome.Platform//3.38 org.gnome.Sdk//3.38
+```
+
+Then use `flatpak` as the target for Linux.
+
 ### Publish
 I'm only aware with how GitHub and self-hosting works, when it comes to including auto-updates.
 
