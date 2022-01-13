@@ -10,7 +10,7 @@
   },
   "author": "KorbsStudio",
   "devDependencies": {
-    "electron": "^15.0.0",
+    "electron": "^16.0.0",
     "electron-builder": "^22.10.5"
   },
   "build": {
