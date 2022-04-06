@@ -72,4 +72,4 @@ Make sure the URL contains the __latest-OS.yml__ file, if you're including auto-
 NOTE: Don't use Node 16.x with Electron Builder, there seems to be an error with macOS. 
 
 #### Using with GitHub Actions
-This template includes workflow file already prepared to build for Windows, macOS, and Linux. Go to the Actions tab, select "Build Executable Files", then under "Run workflow" click Run. After the Action is completed, you can download the files from the Summary of the action.
+This template includes workflow file already prepared to build for Windows, macOS, and Linux. Go to the Actions tab, select "Build Executable Files", then under "Run workflow" click Run. After the Action is completed, you can download the files from the Summary of the action. GitHub Actions only supports x64 systems.

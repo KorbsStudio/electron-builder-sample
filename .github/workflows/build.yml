@@ -1,4 +1,4 @@
-name: Build Executable Files
+name: 64-bit - Build Executable Files
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
